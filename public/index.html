@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera-app</title>
+</head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+
+<body>
+    <div>
+        <b> USER SIDE</b>
+        <div>
+            Signup <br>
+            <input id="signup-user-email" type="email" name="email" placeholder="email">
+            <input id="signup-user-pass" type="password" name="password" placeholder="password">
+            <input id="signup-user-firstName" type="text" name="firstName" placeholder="firstName">
+            <input id="signup-user-lastName" type="text" name="lastName" placeholder="lastName">
+            <button onclick="usersignup()">signup</button>
+        </div><br>
+        <div>
+            Signin <br>
+            <input id="signin-user-email" type="text" name="username" placeholder="username">
+            <input id="signin-user-pass" type="password" name="password" placeholder="password">
+            <button onclick="usersignin()">signin</button>
+        </div>
+        <div>
+            <br>
+            All courses
+            <div id="all-course"></div>
+        </div>
+        <div><br>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
