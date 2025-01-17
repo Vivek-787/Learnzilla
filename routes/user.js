@@ -51,7 +51,7 @@ userRouter.post("/signup", async function (req, res) {
             password: hashedPassword,
             firstName: firstName,
             lastName: lastName
-        })
+        }) 
 
     } catch (error) {
         return res.status(500).json({
